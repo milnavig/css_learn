@@ -1,0 +1,50 @@
+#paragraph {
+	/* Определяет шрифт елемента.
+	Существует два типа имен семейств шрифтов:
+		font family - специфическое семейство шрифтов (Times New Roman, Arial)
+		generic family - группа подобных семейств шрифтов (Serif, Sans-serif, Monospace) 
+	Перечисляем через запятую шрифты. Если браузер не найдет первый шрифт, то он попробует второй.
+	Если шрифт состоит из нескольких слов - нужно писать в скобках. */
+	font-family: "Courier New", Courier, monospace;
+	/* xx-small, small, medium, large, larger и т.д.
+	По умолчанию шрифт в браузере 16px. em = pixels/16 */
+	font-size: large;
+	/* normal, italic, oblique */
+	font-style: italic;
+	/* normal, bold, bolder, lighter.
+	Можно и числом задать от 100 (тонкий) до 900 (жирный) */
+	font-weight: bold;
+	/* normal, small-caps, inherit
+	Позволяет конвертировать шрифт в маленькие заглавные буквы. */
+	font-variant: small-caps;
+	/* Определяет только цвет текста 
+	color: #0000FF
+	color: rgb(255, 0, 0) */
+	color: green;
+	/* определяет горизонтально положение текста.
+	left, right, center, justify (каждая строка растягиваеться так, что будет иметь равную ширину)	*/
+	text-align: center;
+	/* Вертикальное положение елемента 
+	top, middle, bottom, baseline, sub, super, %, px */
+	vertical-align: middle;
+	/* none (по умолчанию), inherit (наследует это свойство от родительского елемента), overline, underline, line-through, blink */
+	text-decoration: underline;
+	/* Определяет сколько места по горизонтали должно быть оставлено до начала первой строки текста. */
+	text-indent: 60px;
+	/* первое значение - длина тени по оси х, второе - по оси у, третье - размытие тени, четвертое - цвет тени. */
+	text-shadow: 5px 2px 2px grey;
+	/* Определяет регистр текста.
+	capitalize, uppercase, lowercase */
+	text-transform: lowercase;
+	/* Расстояние между символами в тексте.
+	normal, length, inherit */
+	letter-spacing: 5px;
+	/* Расстояние между словами в тексте.
+	normal, length, inherit */
+	word-spacing: 10px;
+}
+
+#story {
+	/* pre (учитывает все переносы), pre-line, pre-wrap */
+	white-space: nowrap;
+}

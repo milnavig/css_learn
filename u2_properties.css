@@ -1,0 +1,78 @@
+/* Все элементы HTML могут быть представлены как блоки.
+У каждого блока есть:
+	внешний отступ;
+	рамка;
+	внутренний отступ;
+	контент;
+Свойства работают в такой последовательности: верх, право, низ, лево.
+При установке ширины и высоты елемента в CSS, мы устанаваливаем ширину и высоту области контента.
+*/
+
+#paragraph {
+	/* размер, стиль, цвет.
+	Свойства рамок могут быть установлены по отдельности: border-width, border-style, border-color.
+	border-color: blue;
+	border-color: #FF6600;
+	border-color: rgb(0, 153, 0);
+	Свойства работать не будут пока не будет указан border-style. 
+	border-style может принимать значение none, dotted, dashed, double... 
+	border-top-style, border-bottom-style, border-right-style, border-left-style */
+	border: 5px solid green;
+}
+
+#story {
+	/* Для блочных элементов width, height */
+	border: 5px dotted red;
+	width: 400px;
+	height: 200px;
+	/* Минимальная и максимальная высота и ширина элемента
+	min-width, min-height, max-width, max-height */
+	max-width: 300px;
+	/* Фоновый цвет блока */
+	background-color: #87CEFA;
+	/* background-image: url("Адрес"); */
+}
+
+body {
+	background-image: url("images.jpg");
+	/* Определяет как будет повторяться фоновое изображение.
+	repeat-x, repeat-y, no-repeat, inherit*/
+	background-repeat: repeat-x;
+	/* Устанавливает будет ли прокручиваться фоновое изображение вместе с содержимым */
+	background-attachment: fixed;
+}
+
+#list1 {
+	list-style-type: square;
+	/* list-style-image: url("images.jpg"); */
+	list-style-position: inside;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 20px 40px;
+	caption-side: bottom;
+	empty-cells: hide;
+}
+
+/* В зависимости в каком они состоянии */
+a:link { /* для не посещенных ссылок */
+	color: green;
+}
+a:visited { /* для посещенных ссылок */
+	color: #EEEE00;
+}
+a:active { /* при нажатии */
+	color: olive;
+}
+a:hover {/* когда наводим курсор */
+	color: red;
+}
+
+a {
+	text-decoration: none;
+}
+
+span {
+	cursor: help;
+}

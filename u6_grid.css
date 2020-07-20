@@ -1,0 +1,42 @@
+.grid {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px auto 100px;
+}
+.grid-itm {
+    padding: 5px;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.header {
+    grid-area: header;
+    background-color: yellow;
+}
+.main {
+    grid-area: main;
+    background-color: green;
+}
+.left {
+    grid-area: left;
+    background-color: red;
+}
+.right {
+    grid-area: right;
+    background-color: red;
+}
+.footer {
+    grid-area: footer;
+    background-color: grey;
+}
+.container {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "left main right"
+                         "footer footer footer";
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 100px 1fr 100px;
+    min-height: 100vh;
+}
